@@ -63,7 +63,7 @@ public class material01 extends AppCompatActivity {
     }
 
     private boolean esNombreValido(String nombre){
-        Pattern patron=Pattern.compile("^[a-zA-Z-' ']+$");
+        Pattern patron=Pattern.compile("^[a-zA-Z]+$");
         if(!patron.matcher(nombre).matches() || nombre.length()>30){
             controlNombre.setError("ERROR EN NOMBRE");
             return false;
